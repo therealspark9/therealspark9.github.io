@@ -1,1 +1,417 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sachindra Bhattacharya — Data Engineer with 5+ years building pipelines, platforms, and analytics systems." />
+  <title>Sachindra Bhattacharya</title>
+
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <span class="nav__logo">SB</span>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle__icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────── -->
+  <section class="hero" id="about">
+    <div class="container">
+      <p class="hero__eyebrow">Data Engineer</p>
+      <h1 class="hero__name">Sachindra<br />Bhattacharya</h1>
+      <p class="hero__tagline">5+ years building data pipelines, cloud platforms,<br />and analytics infrastructure that scales.</p>
+      <div class="hero__meta">
+        <span>New Delhi, India</span>
+        <span class="dot">·</span>
+        <span>Google &amp; Salesforce AI Certified</span>
+        <span class="dot">·</span>
+        <a href="https://linkedin.com/in/sachindra-bhattacharya" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/therealspark9" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TECH STACK STRIP ──────────────────────────────────────── -->
+  <section class="stack-strip">
+    <div class="container">
+      <div class="stack-strip__grid">
+
+        <div class="stack-pill">
+          <!-- Snowflake -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Snowflake">
+            <path d="M12 2v20M12 2l-3 3m3-3l3 3M12 22l-3-3m3 3l3-3M2 12h20M2 12l3-3m-3 3l3 3M22 12l-3-3m3 3l-3 3M5.636 5.636l12.728 12.728M5.636 5.636l-.707 4.243m.707-4.243l4.243-.707M18.364 18.364l.707-4.243m-.707 4.243l-4.243.707M18.364 5.636L5.636 18.364M18.364 5.636l-4.243-.707m4.243.707l.707 4.243M5.636 18.364l4.243.707m-4.243-.707l-.707-4.243" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>Snowflake</span>
+        </div>
+
+        <div class="stack-pill">
+          <!-- Python -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Python">
+            <path d="M12 2C9.5 2 7.5 3 7.5 5v2h5v1H5C3 8 2 9.5 2 12s1 4 3 4h1.5v-2.5C6.5 11.5 8 10 10 10h4c2 0 3.5-1.5 3.5-3.5V5C17.5 3 15.5 2 12 2zm-1 2.5a.75.75 0 110 1.5.75.75 0 010-1.5z" fill="currentColor" opacity=".7"/>
+            <path d="M12 22c2.5 0 4.5-1 4.5-3v-2h-5v-1h7c2 0 3-1.5 3-4s-1-4-3-4h-1.5v2.5C17.5 12.5 16 14 14 14h-4c-2 0-3.5 1.5-3.5 3.5V19c0 2 2 3 5.5 3zm1-2.5a.75.75 0 110-1.5.75.75 0 010 1.5z" fill="currentColor" opacity=".7"/>
+          </svg>
+          <span>Python</span>
+        </div>
+
+        <div class="stack-pill">
+          <!-- Tableau -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Tableau">
+            <rect x="11" y="2" width="2" height="5" rx="1" fill="currentColor"/>
+            <rect x="11" y="17" width="2" height="5" rx="1" fill="currentColor"/>
+            <rect x="2" y="11" width="5" height="2" rx="1" fill="currentColor"/>
+            <rect x="17" y="11" width="5" height="2" rx="1" fill="currentColor"/>
+            <rect x="5.5" y="5.5" width="2" height="4" rx="1" fill="currentColor" opacity=".7"/>
+            <rect x="16.5" y="14.5" width="2" height="4" rx="1" fill="currentColor" opacity=".7"/>
+            <rect x="14.5" y="5.5" width="4" height="2" rx="1" fill="currentColor" opacity=".7"/>
+            <rect x="5.5" y="16.5" width="4" height="2" rx="1" fill="currentColor" opacity=".7"/>
+          </svg>
+          <span>Tableau</span>
+        </div>
+
+        <div class="stack-pill">
+          <!-- Airflow -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Apache Airflow">
+            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+            <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5.636 5.636l2.121 2.121M16.243 16.243l2.121 2.121M5.636 18.364l2.121-2.121M16.243 7.757l2.121-2.121" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
+          </svg>
+          <span>Airflow</span>
+        </div>
+
+        <div class="stack-pill">
+          <!-- AWS -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="AWS">
+            <path d="M6.5 15c-1.5 0-2.5-1-2.5-2.5S5 10 6.5 10c.2 0 .3 0 .5.05C7.3 8.8 8.5 8 10 8c2.2 0 4 1.8 4 4 0 .2 0 .3-.02.5H14c1.1 0 2 .9 2 2s-.9 2-2 2H6.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M4 19l1.5-1.5M6.5 19H5M19 7l-1.5 1M19 9v-1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>AWS</span>
+        </div>
+
+        <div class="stack-pill">
+          <!-- SQL -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SQL">
+            <ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M4 6v4c0 1.657 3.582 3 8 3s8-1.343 8-3V6" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M4 10v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M4 14v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span>SQL</span>
+        </div>
+
+        <div class="stack-pill">
+          <!-- Power BI -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Power BI">
+            <rect x="3" y="10" width="3.5" height="11" rx="1" fill="currentColor" opacity=".5"/>
+            <rect x="8.5" y="6" width="3.5" height="15" rx="1" fill="currentColor" opacity=".7"/>
+            <rect x="14" y="3" width="3.5" height="18" rx="1" fill="currentColor"/>
+            <rect x="19.5" y="8" width="1.5" height="13" rx=".75" fill="currentColor" opacity=".4"/>
+          </svg>
+          <span>Power BI</span>
+        </div>
+
+        <div class="stack-pill">
+          <!-- Git -->
+          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Git">
+            <circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="18" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M6 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M8 6h4a4 4 0 014 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>Git</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────────────────── -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section__label">Experience</h2>
+
+      <div class="timeline">
+
+        <article class="timeline__item">
+          <div class="timeline__meta">
+            <time>May 2024 — Present</time>
+            <span class="timeline__location">Gurgaon, Haryana</span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Data Engineer</h3>
+            <p class="timeline__company">NTT DATA</p>
+            <ul class="timeline__bullets">
+              <li>Orchestrated 20K+ datasources, dashboards &amp; flows with 100K+ users in Tableau Cloud.</li>
+              <li>Managed 7 on-prem Tableau Servers (PROD, STAGE, TEST, DEV) then led full migration to Tableau Cloud.</li>
+              <li>Configured Tableau Bridge across 15 Windows VMs to maintain live data connectivity post-migration.</li>
+              <li>Led Snowflake key-pair authentication migration for 500+ datasources across 25 service accounts.</li>
+              <li>Managed 20+ incidents over 2 years; recognised by senior leadership for proactive incident management in 2026.</li>
+              <li>Collaborated with the EDW team on Airflow DAG maintenance for Finance and Revenue pipelines on Snowflake.</li>
+              <li>Engineered Node.js &amp; Python automation scripts to migrate 6.3K+ AEM forms to static webpages — subscription cost to zero.</li>
+              <li>Built a custom Python/HTML error monitor to validate 10K+ migrated pages, ensuring 100% data integrity.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__meta">
+            <time>Jun 2022 — Oct 2023</time>
+            <span class="timeline__location">Bangalore &amp; Hyderabad</span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Data Analyst</h3>
+            <p class="timeline__company">Accenture</p>
+            <ul class="timeline__bullets">
+              <li>Audited 20K+ consent artefacts across 1.2K+ websites using Excel &amp; Power BI for GDPR compliance.</li>
+              <li>Delivered data privacy compliance for 500+ companies across 140+ countries and 30+ languages.</li>
+              <li>Built serverless consent delivery pipelines using REST APIs, SQL, AWS S3, and AWS Lambda.</li>
+              <li>Traced 5M+ unattributed receipt loads to missing country/platform filters — improving data accuracy significantly.</li>
+              <li>Resolved 1,500+ incidents over 2.5 years via Jenkins CI/CD, JIRA, and Confluence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__meta">
+            <time>Dec 2020 — Jun 2022</time>
+            <span class="timeline__location">Bangalore</span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Associate Data &amp; Web Analyst</h3>
+            <p class="timeline__company">Accenture</p>
+            <ul class="timeline__bullets">
+              <li>Automated ingestion and onboarding of 700+ website data streams into OneTrust for privacy governance.</li>
+              <li>Managed data workflows for 220+ WordPress sites to align regional compliance with global pipeline standards.</li>
+              <li>Deployed modular front-end components for 100+ brands within an Agile SCRUM environment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__meta">
+            <time>Jan 2020 — Apr 2020</time>
+            <span class="timeline__location">Bangalore</span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="timeline__role">Data Science Intern</h3>
+            <p class="timeline__company">Accenture</p>
+            <ul class="timeline__bullets">
+              <li>Conducted data visualisation and performance analysis (TTFB, FCP, LCP) using NumPy, Matplotlib &amp; SQL.</li>
+              <li>Evaluated 7 BI tools for internal adoption and improved chatbot accuracy via semantic/syntactic text analysis.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────────────── -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <h2 class="section__label">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skills-group">
+          <h3 class="skills-group__title">Data Engineering</h3>
+          <ul>
+            <li>Snowflake</li>
+            <li>Apache Airflow</li>
+            <li>ETL Pipelines</li>
+            <li>AWS S3 &amp; Lambda</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group__title">Programming</h3>
+          <ul>
+            <li>Python (Pandas, NumPy)</li>
+            <li>SQL</li>
+            <li>JavaScript / Node.js</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group__title">BI &amp; Visualisation</h3>
+          <ul>
+            <li>Tableau Cloud &amp; Server</li>
+            <li>Tableau Prep &amp; Pulse</li>
+            <li>Power BI</li>
+            <li>Excel (Pivot Tables)</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group__title">Data Governance</h3>
+          <ul>
+            <li>GDPR / CCPA</li>
+            <li>OneTrust</li>
+            <li>Google Analytics</li>
+            <li>Google Tag Manager</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group__title">Certifications</h3>
+          <ul>
+            <li>Salesforce Platform Admin <span class="cert-year">2025</span></li>
+            <li>Salesforce AI Associate <span class="cert-year">2025</span></li>
+            <li>Google Analytics <span class="cert-year">2024</span></li>
+            <li>Google Cloud Digital Leader <span class="cert-year">2023</span></li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group__title">Tools &amp; Platforms</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Jenkins CI/CD</li>
+            <li>JIRA / Confluence</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────────────── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section__label">Projects</h2>
+      <div class="projects-grid">
+
+        <a class="project-card" href="https://github.com/therealspark9/fpl-model-beta" target="_blank" rel="noopener">
+          <div class="project-card__header">
+            <span class="project-card__tag">Python · Optimisation</span>
+            <svg class="project-card__arrow" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="project-card__title">Fantasy Football Squad Optimizer</h3>
+          <p class="project-card__desc">Constrained optimisation model for selecting the best 15-player FPL squad under budget and formation rules. Ongoing since Jan 2024.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/therealspark9/data-scraping-reddit" target="_blank" rel="noopener">
+          <div class="project-card__header">
+            <span class="project-card__tag">Python · Data</span>
+            <svg class="project-card__arrow" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="project-card__title">Reddit Data Scraper</h3>
+          <p class="project-card__desc">Built with PRAW API and pandas, enabling topic-based subreddit analysis and data extraction.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/therealspark9/gei" target="_blank" rel="noopener">
+          <div class="project-card__header">
+            <span class="project-card__tag">ML · Biometrics</span>
+            <svg class="project-card__arrow" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="project-card__title">Gait Recognition via ML</h3>
+          <p class="project-card__desc">ML model for biometric gait recognition of 150+ individuals using the CASIA-B database. Final-year project at Manipal University.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WRITING ───────────────────────────────────────────────── -->
+  <section class="section section--alt" id="writing">
+    <div class="container">
+      <h2 class="section__label">Writing</h2>
+      <p class="section__intro">Occasional long-form articles on data engineering, tooling, and craft.</p>
+
+      <div class="writing-list">
+        <a class="writing-item" href="https://sparxweb.wordpress.com/" target="_blank" rel="noopener">
+          <div class="writing-item__text">
+            <h3 class="writing-item__title">SparxWeb</h3>
+            <p class="writing-item__sub">sparxweb.wordpress.com</p>
+          </div>
+          <svg class="writing-item__arrow" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────────── -->
+  <section class="section" id="contact">
+    <div class="container contact">
+      <h2 class="section__label">Contact</h2>
+      <p class="contact__line">
+        <a href="mailto:sachindrabh@gmail.com">sachindrabh@gmail.com</a>
+      </p>
+      <div class="contact__links">
+        <a href="https://linkedin.com/in/sachindra-bhattacharya" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/therealspark9" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://sparxweb.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Sachindra Bhattacharya</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ── Theme toggle (persisted)
+    const html = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (stored === 'dark' || (!stored && prefersDark)) html.setAttribute('data-theme', 'dark');
+
+    btn.addEventListener('click', () => {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    });
+
+    // ── Nav scroll shadow
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    // ── Scroll-reveal (lightweight, no library)
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.timeline__item, .skills-group, .project-card, .writing-item').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
