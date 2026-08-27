@@ -5,35 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sachindra Bhattacharya — Data Engineer with 5+ years building pipelines, platforms, and analytics systems." />
   <title>Sachindra Bhattacharya</title>
-
-  <!-- Preload critical CSS -->
   <link rel="preload" href="style.css" as="style" />
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicon placeholder -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 </head>
 <body>
 
-  <!-- ─── NAV ─────────────────────────────────────────────────── -->
+  <!-- NAV -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <span class="nav__logo">SB</span>
+
+      <a href="#about" class="nav__avatar-link">
+        <img
+          class="nav__avatar"
+          src="data:image/jpeg;base64,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"
+          alt="Sachindra Bhattacharya"
+          width="32"
+          height="32"
+        />
+      </a>
+
       <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#experience">Exp</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#writing">Writing</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+
+      <label class="theme-toggle" for="theme-checkbox" aria-label="Toggle dark mode">
         <span class="theme-toggle__icon"></span>
-      </button>
+      </label>
+      <input type="checkbox" id="theme-checkbox" class="theme-checkbox" />
+
     </div>
   </nav>
 
-  <!-- ─── HERO ─────────────────────────────────────────────────── -->
+  <!-- HERO -->
   <section class="hero" id="about">
     <div class="container">
       <p class="hero__eyebrow">Data Engineer</p>
@@ -51,105 +61,69 @@
     </div>
   </section>
 
-  <!-- ─── TECH STACK STRIP ──────────────────────────────────────── -->
+  <!-- TECH STACK STRIP -->
   <section class="stack-strip">
     <div class="container">
       <div class="stack-strip__grid">
 
         <div class="stack-pill">
-          <!-- Snowflake -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Snowflake">
-            <path d="M12 2v20M12 2l-3 3m3-3l3 3M12 22l-3-3m3 3l3-3M2 12h20M2 12l3-3m-3 3l3 3M22 12l-3-3m3 3l-3 3M5.636 5.636l12.728 12.728M5.636 5.636l-.707 4.243m.707-4.243l4.243-.707M18.364 18.364l.707-4.243m-.707 4.243l-4.243.707M18.364 5.636L5.636 18.364M18.364 5.636l-4.243-.707m4.243.707l.707 4.243M5.636 18.364l4.243.707m-4.243-.707l-.707-4.243" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/snowflake/29B5E8/aaaaaa" alt="Snowflake" width="16" height="16" loading="lazy" />
           <span>Snowflake</span>
         </div>
 
         <div class="stack-pill">
-          <!-- Python -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Python">
-            <path d="M12 2C9.5 2 7.5 3 7.5 5v2h5v1H5C3 8 2 9.5 2 12s1 4 3 4h1.5v-2.5C6.5 11.5 8 10 10 10h4c2 0 3.5-1.5 3.5-3.5V5C17.5 3 15.5 2 12 2zm-1 2.5a.75.75 0 110 1.5.75.75 0 010-1.5z" fill="currentColor" opacity=".7"/>
-            <path d="M12 22c2.5 0 4.5-1 4.5-3v-2h-5v-1h7c2 0 3-1.5 3-4s-1-4-3-4h-1.5v2.5C17.5 12.5 16 14 14 14h-4c-2 0-3.5 1.5-3.5 3.5V19c0 2 2 3 5.5 3zm1-2.5a.75.75 0 110-1.5.75.75 0 010 1.5z" fill="currentColor" opacity=".7"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/python/3776AB/aaaaaa" alt="Python" width="16" height="16" loading="lazy" />
           <span>Python</span>
         </div>
 
         <div class="stack-pill">
-          <!-- Tableau -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Tableau">
-            <rect x="11" y="2" width="2" height="5" rx="1" fill="currentColor"/>
-            <rect x="11" y="17" width="2" height="5" rx="1" fill="currentColor"/>
-            <rect x="2" y="11" width="5" height="2" rx="1" fill="currentColor"/>
-            <rect x="17" y="11" width="5" height="2" rx="1" fill="currentColor"/>
-            <rect x="5.5" y="5.5" width="2" height="4" rx="1" fill="currentColor" opacity=".7"/>
-            <rect x="16.5" y="14.5" width="2" height="4" rx="1" fill="currentColor" opacity=".7"/>
-            <rect x="14.5" y="5.5" width="4" height="2" rx="1" fill="currentColor" opacity=".7"/>
-            <rect x="5.5" y="16.5" width="4" height="2" rx="1" fill="currentColor" opacity=".7"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/tableau/E97627/aaaaaa" alt="Tableau" width="16" height="16" loading="lazy" />
           <span>Tableau</span>
         </div>
 
         <div class="stack-pill">
-          <!-- Airflow -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Apache Airflow">
-            <circle cx="12" cy="12" r="3" fill="currentColor"/>
-            <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M5.636 5.636l2.121 2.121M16.243 16.243l2.121 2.121M5.636 18.364l2.121-2.121M16.243 7.757l2.121-2.121" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/apacheairflow/017CEE/aaaaaa" alt="Apache Airflow" width="16" height="16" loading="lazy" />
           <span>Airflow</span>
         </div>
 
         <div class="stack-pill">
-          <!-- AWS -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="AWS">
-            <path d="M6.5 15c-1.5 0-2.5-1-2.5-2.5S5 10 6.5 10c.2 0 .3 0 .5.05C7.3 8.8 8.5 8 10 8c2.2 0 4 1.8 4 4 0 .2 0 .3-.02.5H14c1.1 0 2 .9 2 2s-.9 2-2 2H6.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M4 19l1.5-1.5M6.5 19H5M19 7l-1.5 1M19 9v-1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/amazonaws/FF9900/aaaaaa" alt="AWS" width="16" height="16" loading="lazy" />
           <span>AWS</span>
         </div>
 
         <div class="stack-pill">
-          <!-- SQL -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SQL">
-            <ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M4 6v4c0 1.657 3.582 3 8 3s8-1.343 8-3V6" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M4 10v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M4 14v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/postgresql/4169E1/aaaaaa" alt="SQL" width="16" height="16" loading="lazy" />
           <span>SQL</span>
         </div>
 
         <div class="stack-pill">
-          <!-- Power BI -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Power BI">
-            <rect x="3" y="10" width="3.5" height="11" rx="1" fill="currentColor" opacity=".5"/>
-            <rect x="8.5" y="6" width="3.5" height="15" rx="1" fill="currentColor" opacity=".7"/>
-            <rect x="14" y="3" width="3.5" height="18" rx="1" fill="currentColor"/>
-            <rect x="19.5" y="8" width="1.5" height="13" rx=".75" fill="currentColor" opacity=".4"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/powerbi/F2C811/aaaaaa" alt="Power BI" width="16" height="16" loading="lazy" />
           <span>Power BI</span>
         </div>
 
         <div class="stack-pill">
-          <!-- Git -->
-          <svg class="stack-pill__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Git">
-            <circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="18" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M6 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M8 6h4a4 4 0 014 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/git/F05032/aaaaaa" alt="Git" width="16" height="16" loading="lazy" />
           <span>Git</span>
+        </div>
+
+        <div class="stack-pill">
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/salesforce/00A1E0/aaaaaa" alt="Salesforce" width="16" height="16" loading="lazy" />
+          <span>Salesforce</span>
+        </div>
+
+        <div class="stack-pill">
+          <img class="stack-pill__icon" src="https://cdn.simpleicons.org/googlecloud/4285F4/aaaaaa" alt="Google Cloud" width="16" height="16" loading="lazy" />
+          <span>GCP</span>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── EXPERIENCE ────────────────────────────────────────────── -->
+  <!-- EXPERIENCE -->
   <section class="section" id="experience">
     <div class="container">
       <h2 class="section__label">Experience</h2>
-
       <div class="timeline">
 
         <article class="timeline__item">
@@ -166,9 +140,9 @@
               <li>Configured Tableau Bridge across 15 Windows VMs to maintain live data connectivity post-migration.</li>
               <li>Led Snowflake key-pair authentication migration for 500+ datasources across 25 service accounts.</li>
               <li>Managed 20+ incidents over 2 years; recognised by senior leadership for proactive incident management in 2026.</li>
-              <li>Collaborated with the EDW team on Airflow DAG maintenance for Finance and Revenue pipelines on Snowflake.</li>
-              <li>Engineered Node.js &amp; Python automation scripts to migrate 6.3K+ AEM forms to static webpages — subscription cost to zero.</li>
-              <li>Built a custom Python/HTML error monitor to validate 10K+ migrated pages, ensuring 100% data integrity.</li>
+              <li>Collaborated with EDW team on Airflow DAG maintenance for Finance and Revenue pipelines on Snowflake.</li>
+              <li>Engineered Node.js &amp; Python automation to migrate 6.3K+ AEM forms to static webpages — subscription cost to zero.</li>
+              <li>Built a Python/HTML error monitor to validate 10K+ migrated pages, ensuring 100% data integrity.</li>
             </ul>
           </div>
         </article>
@@ -185,7 +159,7 @@
               <li>Audited 20K+ consent artefacts across 1.2K+ websites using Excel &amp; Power BI for GDPR compliance.</li>
               <li>Delivered data privacy compliance for 500+ companies across 140+ countries and 30+ languages.</li>
               <li>Built serverless consent delivery pipelines using REST APIs, SQL, AWS S3, and AWS Lambda.</li>
-              <li>Traced 5M+ unattributed receipt loads to missing country/platform filters — improving data accuracy significantly.</li>
+              <li>Traced 5M+ unattributed receipt loads to missing country/platform filters — significantly improving data accuracy.</li>
               <li>Resolved 1,500+ incidents over 2.5 years via Jenkins CI/CD, JIRA, and Confluence.</li>
             </ul>
           </div>
@@ -201,8 +175,8 @@
             <p class="timeline__company">Accenture</p>
             <ul class="timeline__bullets">
               <li>Automated ingestion and onboarding of 700+ website data streams into OneTrust for privacy governance.</li>
-              <li>Managed data workflows for 220+ WordPress sites to align regional compliance with global pipeline standards.</li>
-              <li>Deployed modular front-end components for 100+ brands within an Agile SCRUM environment.</li>
+              <li>Managed data workflows for 220+ WordPress sites aligned with global pipeline standards.</li>
+              <li>Deployed modular front-end components for 100+ brands in an Agile SCRUM environment.</li>
             </ul>
           </div>
         </article>
@@ -216,8 +190,8 @@
             <h3 class="timeline__role">Data Science Intern</h3>
             <p class="timeline__company">Accenture</p>
             <ul class="timeline__bullets">
-              <li>Conducted data visualisation and performance analysis (TTFB, FCP, LCP) using NumPy, Matplotlib &amp; SQL.</li>
-              <li>Evaluated 7 BI tools for internal adoption and improved chatbot accuracy via semantic/syntactic text analysis.</li>
+              <li>Conducted performance analysis (TTFB, FCP, LCP) using NumPy, Matplotlib &amp; SQL.</li>
+              <li>Evaluated 7 BI tools for internal adoption; improved chatbot accuracy via semantic/syntactic text analysis.</li>
             </ul>
           </div>
         </article>
@@ -226,7 +200,7 @@
     </div>
   </section>
 
-  <!-- ─── SKILLS ────────────────────────────────────────────────── -->
+  <!-- SKILLS -->
   <section class="section section--alt" id="skills">
     <div class="container">
       <h2 class="section__label">Skills</h2>
@@ -297,7 +271,7 @@
     </div>
   </section>
 
-  <!-- ─── PROJECTS ──────────────────────────────────────────────── -->
+  <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="container">
       <h2 class="section__label">Projects</h2>
@@ -309,7 +283,7 @@
             <svg class="project-card__arrow" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3 class="project-card__title">Fantasy Football Squad Optimizer</h3>
-          <p class="project-card__desc">Constrained optimisation model for selecting the best 15-player FPL squad under budget and formation rules. Ongoing since Jan 2024.</p>
+          <p class="project-card__desc">Constrained optimisation model for selecting the best 15-player FPL squad under budget and formation rules.</p>
         </a>
 
         <a class="project-card" href="https://github.com/therealspark9/data-scraping-reddit" target="_blank" rel="noopener">
@@ -318,7 +292,7 @@
             <svg class="project-card__arrow" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3 class="project-card__title">Reddit Data Scraper</h3>
-          <p class="project-card__desc">Built with PRAW API and pandas, enabling topic-based subreddit analysis and data extraction.</p>
+          <p class="project-card__desc">Built with PRAW API and pandas for topic-based subreddit analysis and data extraction.</p>
         </a>
 
         <a class="project-card" href="https://github.com/therealspark9/gei" target="_blank" rel="noopener">
@@ -334,12 +308,11 @@
     </div>
   </section>
 
-  <!-- ─── WRITING ───────────────────────────────────────────────── -->
+  <!-- WRITING -->
   <section class="section section--alt" id="writing">
     <div class="container">
       <h2 class="section__label">Writing</h2>
       <p class="section__intro">Occasional long-form articles on data engineering, tooling, and craft.</p>
-
       <div class="writing-list">
         <a class="writing-item" href="https://sparxweb.wordpress.com/" target="_blank" rel="noopener">
           <div class="writing-item__text">
@@ -352,7 +325,7 @@
     </div>
   </section>
 
-  <!-- ─── CONTACT ───────────────────────────────────────────────── -->
+  <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container contact">
       <h2 class="section__label">Contact</h2>
@@ -367,51 +340,12 @@
     </div>
   </section>
 
-  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <span>© <span id="year"></span> Sachindra Bhattacharya</span>
+      <span>© 2025 Sachindra Bhattacharya</span>
     </div>
   </footer>
-
-  <script>
-    // ── Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // ── Theme toggle (persisted)
-    const html = document.documentElement;
-    const btn = document.getElementById('themeToggle');
-    const stored = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (stored === 'dark' || (!stored && prefersDark)) html.setAttribute('data-theme', 'dark');
-
-    btn.addEventListener('click', () => {
-      const isDark = html.getAttribute('data-theme') === 'dark';
-      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-      localStorage.setItem('theme', isDark ? 'light' : 'dark');
-    });
-
-    // ── Nav scroll shadow
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('nav--scrolled', window.scrollY > 10);
-    }, { passive: true });
-
-    // ── Scroll-reveal (lightweight, no library)
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('revealed');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.timeline__item, .skills-group, .project-card, .writing-item').forEach(el => {
-      el.classList.add('reveal');
-      observer.observe(el);
-    });
-  </script>
 
 </body>
 </html>
